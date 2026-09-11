@@ -25,4 +25,8 @@ urlpatterns = [
         'api/auth/',
         include('apps.accounts.urls')
     ),
+    path(
+    'api/profile/',
+    include('apps.profiles.urls')
+),
 ]
