@@ -12,6 +12,7 @@ class StudentProfileSerializer(serializers.ModelSerializer):
             'phone',
             'branch',
             'cgpa',
+            'backlogs',
             'skills',
             'bio',
             'created_at',

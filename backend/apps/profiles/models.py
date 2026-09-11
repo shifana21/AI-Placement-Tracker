@@ -25,6 +25,9 @@ class StudentProfile(models.Model):
         null=True,
         blank=True,
     )
+    backlogs = models.PositiveIntegerField(
+    default=0,
+)
 
     skills = models.TextField(
         blank=True,

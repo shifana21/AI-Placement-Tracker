@@ -29,4 +29,9 @@ urlpatterns = [
     'api/profile/',
     include('apps.profiles.urls')
 ),
+path(
+    'api/companies/',
+    include('apps.companies.urls')
+),
+
 ]
