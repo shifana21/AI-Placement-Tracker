@@ -33,5 +33,10 @@ path(
     'api/companies/',
     include('apps.companies.urls')
 ),
+    path(
+        "api/applications/",
+        include("apps.applications.urls"),
+    ),
+
 
 ]
