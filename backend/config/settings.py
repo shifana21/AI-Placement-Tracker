@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'apps.accounts.apps.AccountsConfig',
     'apps.profiles.apps.ProfilesConfig',
 'apps.companies.apps.CompaniesConfig',
+'apps.applications.apps.ApplicationsConfig',
+'apps.resumes.apps.ResumesConfig',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +145,5 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 }
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
