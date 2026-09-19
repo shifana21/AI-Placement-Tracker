@@ -150,4 +150,4 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 GEMINI_API_KEY = config("GEMINI_API_KEY", default="")
-GEMINI_MODEL = config("GEMINI_MODEL", default="gemini-2.0-flash")
+GEMINI_MODEL = config("GEMINI_MODEL", default="gemini-3.6-flash")
