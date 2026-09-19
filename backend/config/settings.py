@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 'apps.companies.apps.CompaniesConfig',
 'apps.applications.apps.ApplicationsConfig',
 'apps.resumes.apps.ResumesConfig',
+"apps.resume_analysis.apps.ResumeAnalysisConfig",
 ]
 
 MIDDLEWARE = [
@@ -147,3 +148,6 @@ REST_FRAMEWORK = {
 }
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+GEMINI_API_KEY = config("GEMINI_API_KEY", default="")
+GEMINI_MODEL = config("GEMINI_MODEL", default="gemini-2.0-flash")
