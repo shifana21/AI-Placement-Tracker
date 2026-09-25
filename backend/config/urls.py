@@ -43,6 +43,10 @@ path(
     "api/resumes/",
     include("apps.resumes.urls"),
 ),
+    path(
+        "api/coding/",
+        include("apps.coding_progress.urls"),
+    ),
 
 
 ]
