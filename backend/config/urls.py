@@ -47,8 +47,10 @@ path(
         "api/coding/",
         include("apps.coding_progress.urls"),
     ),
-
-
+    path(
+        "api/aptitude/",
+        include("apps.aptitude.urls"),
+    ),
 ]
 if settings.DEBUG:
     urlpatterns += static(

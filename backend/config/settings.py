@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 'apps.resumes.apps.ResumesConfig',
 "apps.resume_analysis.apps.ResumeAnalysisConfig",
 'apps.coding_progress.apps.CodingProgressConfig',
+    'apps.aptitude.apps.AptitudeConfig',
 ]
 
 MIDDLEWARE = [

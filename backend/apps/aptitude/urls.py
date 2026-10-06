@@ -1,0 +1,61 @@
+from django.urls import path
+
+from apps.aptitude.views import (
+    AptitudeAIAnalysisView,
+    AptitudeAnalyticsView,
+    AptitudeAttemptAnswerView,
+    AptitudeAttemptDetailView,
+    AptitudeAttemptListView,
+    AptitudeAttemptStartView,
+    AptitudeAttemptSubmitView,
+    AptitudeQuestionDetailView,
+    AptitudeQuestionListView,
+)
+
+urlpatterns = [
+    path(
+        "questions/",
+        AptitudeQuestionListView.as_view(),
+        name="aptitude-question-list",
+    ),
+    path(
+        "questions/<int:pk>/",
+        AptitudeQuestionDetailView.as_view(),
+        name="aptitude-question-detail",
+    ),
+    path(
+        "attempts/start/",
+        AptitudeAttemptStartView.as_view(),
+        name="aptitude-attempt-start",
+    ),
+    path(
+        "attempts/",
+        AptitudeAttemptListView.as_view(),
+        name="aptitude-attempt-list",
+    ),
+    path(
+        "attempts/<int:pk>/",
+        AptitudeAttemptDetailView.as_view(),
+        name="aptitude-attempt-detail",
+    ),
+    path(
+        "attempts/<int:attempt_id>/answer/",
+        AptitudeAttemptAnswerView.as_view(),
+        name="aptitude-attempt-answer",
+    ),
+    path(
+        "attempts/<int:attempt_id>/submit/",
+        AptitudeAttemptSubmitView.as_view(),
+        name="aptitude-attempt-submit",
+    ),
+    path(
+        "analytics/",
+        AptitudeAnalyticsView.as_view(),
+        name="aptitude-analytics",
+    ),
+    path(
+        "ai-analysis/",
+        AptitudeAIAnalysisView.as_view(),
+        name="aptitude-ai-analysis",
+    ),
+]
