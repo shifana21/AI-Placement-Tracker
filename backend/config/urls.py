@@ -51,6 +51,10 @@ path(
         "api/aptitude/",
         include("apps.aptitude.urls"),
     ),
+    path(
+        "api/interview/",
+        include("apps.ai_interview.urls"),
+    ),
 ]
 if settings.DEBUG:
     urlpatterns += static(
