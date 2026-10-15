@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 'apps.coding_progress.apps.CodingProgressConfig',
     'apps.aptitude.apps.AptitudeConfig',
     'apps.ai_interview.apps.AiInterviewConfig',
+    'apps.career_recommendations.apps.CareerRecommendationsConfig',
 ]
 
 MIDDLEWARE = [

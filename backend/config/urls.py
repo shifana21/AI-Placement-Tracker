@@ -55,6 +55,10 @@ path(
         "api/interview/",
         include("apps.ai_interview.urls"),
     ),
+    path(
+        "api/career/",
+        include("apps.career_recommendations.urls"),
+    ),
 ]
 if settings.DEBUG:
     urlpatterns += static(
